@@ -20,7 +20,7 @@ class ProyectoController
         //[proyecto:nombreDelProyecto,fecha:fechaCaducidad]   //asigna el valor de NombreDelProyecto a la variable proyecto, 
                                                               //que es definida dentro del archivo GSP actual (vista)
         
-        def todosLosProyectos = ListaDeProyectos.list()     // Obtiene toda la info contenida en el modelo ListaDeProyectos
+        def todosLosProyectos = Proyecto.list()     // Obtiene toda la info contenida en el domain (modelo) Proyecto
         [todosLosProyectos:todosLosProyectos]                                                            
     } 
     
